@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIE PAGE</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>MOVIE PAGE</h1>
+    <ul>
+        <li>
+            <a class="menu-link" href="{% url 'director' %}">Create Director info</a>
+        </li>
+        <li>
+            <a class="menu-link" href="{% url 'movie' %}">Create Movie info</a>
+        </li>
+        <li>
+            <a class="menu-link" href="{% url 'showlist' %}">List</a>
+        </li>
+    </ul>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+<h1>Directors</h1>
+    <ul>
+        {% for director in directors %}
+            <li>{{ director.name }} - {{ director.no_movies }} Movies - {{ director.place }}</li>
+        {% endfor %}
+    </ul>

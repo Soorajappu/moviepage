@@ -1,0 +1,77 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.menu-link{
+    color: blue;
+    text-decoration: none;
+}
+
+.menu-link:hover{
+    text-decoration: underline;
+}
+
+.menu-link:active{
+    color: #c2040e;
+}
+
+.box{
+    width: 250px;
+    height: 100px;
+    margin: 20px;
+    float: left;
+    padding: 12px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: #e0e0e0;
+}
+
+.buttons{
+    float: right;
+    margin-right: 2px;
+    margin-top: 15px;
+    gap: 10px;
+    /* margin-bottom: 20px; */
+    /* margin-left: 2px; */
+    font-size: 15px;
+    display: flex;
+}
+
+.edit{
+    background: green;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.delete{
+    background: red;
+    padding: 3px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: white;
+}
+
+.cancel{
+    background: #f0f0f0;
+    border: 0.5px solid gray;
+    /* padding: 1px; */
+    padding-left: 8px;
+    padding-right: 8px;
+    text-decoration: none;
+    color: black;
+    border-radius: 2px;
+    padding-bottom: 2px;
+}
+
+.cancel:hover{
+    background: #e6e5e5;
+}
+
+.btn-submit{
+    cursor: pointer;
+}

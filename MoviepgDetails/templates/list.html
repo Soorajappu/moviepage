@@ -1,0 +1,25 @@
+{% load static %}
+{% include "index.html" %}
+<h2>MOVIE DETAILES</h2>
+<ul>
+    {% for movie in movies %}
+        <div class="box">
+            <div>
+                {{ movie.title }} 
+                ({{ movie.year }}) <br> 
+                {{ movie.language }} <br> 
+                Directed by {{ movie.director.name }} <br> 
+                Year {{movie.year}} 
+            </div>
+            <div class="buttons">
+                <div>
+                    <a class="edit" href="{% url 'movie_edit' movie.id %}">Update</a>
+                </div>
+                <div>
+                    <a class="delete" href="{% url 'movie_delete' movie.id %}">Delete</a>
+                </div>
+            </div>
+            
+        </div>
+    {% endfor %}
+</ul>
